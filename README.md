@@ -4,12 +4,10 @@
 
 :link: [https://trylight.net/wmwm/](https://trylight.net/wmwm/)
 
-# Requirement
+## Requirement
 
 - Node v14.15.0 ~
 - React v17.0~
-
-# Usage
 
 ## Install.
 
