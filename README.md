@@ -1,6 +1,6 @@
 # WMWM
 
-電子レンジのワット数ごとの温め時間を簡単に計算
+電子レンジのワット数ごとの温め時間を簡単に計算するサービス。
 
 :link: [https://trylight.net/wmwm/](https://trylight.net/wmwm/)
 
