@@ -1,0 +1,23 @@
+.iconWat,
+.iconMin {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  width: 22px;
+  transform: translateY(-50%);
+}
+.iconWat {
+  margin-top: -1px;
+}
+@media (min-width: 414px) {
+  .iconWat,
+  .iconMin {
+    width: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .iconWat,
+  .iconMin {
+    width: 28px;
+  }
+}

@@ -1,0 +1,57 @@
+.wrapper {
+  --maxMarginTop: 40px;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  position: relative;
+  width: 25.625vw;
+  margin-top: clamp(20px, 6.25vw, var(--maxMarginTop));
+}
+.button,
+.wat,
+.min {
+  display: none;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    order: 1;
+  }
+  .content {
+    width: 620px;
+  }
+  .button,
+  .wat,
+  .min {
+    display: block;
+    position: absolute;
+  }
+  .button {
+    background: transparent;
+    border: none;
+    top: 164px;
+    right: 30px;
+    width: 44px;
+    height: 20px;
+    font-size: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .wat,
+  .min {
+    font-size: 30px;
+    right: 46px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .wat {
+    top: 34px;
+  }
+  .min {
+    top: 76px;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .wrapper {
+    --maxMarginTop: 60px;
+  }
+}

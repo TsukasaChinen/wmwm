@@ -1,0 +1,126 @@
+.wrapper {
+  --contentWidth: 280px;
+  --sideMargin: 10px;
+  --selectHeight: 56px;
+  --selectWidthMedium: 120px;
+  --selectWidthSmall: 80px;
+  --selectFontSize: 48px;
+  --selectLetterSpacing: 0.05em;
+  --textFontSize: 18px;
+  --textLetterSpacing: 0.1em;
+  --maxMarginTop: 40px;
+  width: var(--contentWidth);
+  margin-top: clamp(20px, 6.25vw, var(--maxMarginTop));
+  font-weight: bold;
+}
+.group {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--sideMargin);
+}
+.group:last-of-type {
+  margin-top: calc(var(--sideMargin) * 2.5);
+}
+.selectGroup {
+  position: relative;
+  margin-right: var(--sideMargin);
+}
+.selectGroup.medium {
+  width: var(--selectWidthMedium);
+}
+.selectGroup.small {
+  width: var(--selectWidthSmall);
+}
+.dummy,
+.select {
+  width: 100%;
+  height: var(--selectHeight);
+  font-size: var(--selectFontSize);
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  letter-spacing: var(--selectLetterSpacing);
+}
+.dummy {
+  position: absolute;
+}
+.select {
+  width: 100%;
+  background: none;
+  font-size: 16px;
+  border: none;
+  opacity: 0;
+}
+.text {
+  display: inline-block;
+  font-size: var(--textFontSize);
+  letter-spacing: var(--textLetterSpacing);
+  white-space: nowrap;
+}
+@media (min-width: 375px) {
+  .wrapper {
+    --contentWidth: 320px;
+  }
+}
+@media (min-width: 414px) {
+  .wrapper {
+    --contentWidth: 374px;
+    --selectHeight: 60px;
+    --selectWidthMedium: 140px;
+    --selectWidthSmall: 84px;
+    --selectFontSize: 50px;
+    --textFontSize: 26px;
+    --sideMargin: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    --contentWidth: 100%;
+    --selectWidthMedium: 128px;
+    --selectWidthSmall: 66px;
+    --selectFontSize: 48px;
+    --textFontSize: 15px;
+    --selectLetterSpacing: 0.1em;
+    order: 2;
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .group {
+    margin-bottom: 0;
+  }
+  .group:last-of-type {
+    margin-top: 0;
+  }
+  .group + .group .selectGroup {
+    margin-left: var(--sideMargin);
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .wrapper {
+    --maxMarginTop: 60px;
+  }
+}
+@media (min-width: 840px) {
+  .wrapper {
+    --contentWidth: var(--maxWidth);
+    --textFontSize: 18px;
+  }
+  .text {
+    transform: translateY(-2px);
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    --selectWidthMedium: 160px;
+    --selectHeight: 56px;
+    --selectWidthSmall: 72px;
+    --selectFontSize: 50px;
+    --textLetterSpacing: 0.05em;
+    --textFontSize: 22px;
+  }
+  .text {
+    transform: translateY(-6px);
+  }
+}

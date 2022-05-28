@@ -1,0 +1,27 @@
+.header {
+  --maxMarginTop: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  margin-top: clamp(20px, 6.25vw, var(--maxMarginTop));
+}
+.link {
+  display: block;
+  width: fit-content;
+}
+.header h1 {
+  font-size: clamp(28px, 8.75vw, 58px);
+  letter-spacing: 0.1em;
+}
+.header p {
+  font-size: clamp(10px, 3.125vw, 12px);
+  letter-spacing: 0.2em;
+  margin-top: clamp(6px, 1.25vw, 10px);
+  text-indent: 0.5em;
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .header {
+    --maxMarginTop: 60px;
+  }
+}

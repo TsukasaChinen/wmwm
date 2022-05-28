@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  margin: 0 calc(50% - 50vw);
+  width: 100%;
+  height: var(--adHeight);
+  font-size: 12px;
+  background: var(--black);
+  padding: 0 var(--paddingSide);
+  z-index: 3;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(100%, calc(var(--maxWidth)));
+  height: 100%;
+}
+.text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 2px;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    --paddingSide: 40px;
+  }
+}
+@media screen and (min-width: 820px) {
+  .wrapper {
+    --paddingSide: 0;
+  }
+}

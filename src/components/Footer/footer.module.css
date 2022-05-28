@@ -1,0 +1,25 @@
+.footer {
+  --marginTop: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  margin: var(--marginTop) 0 20px;
+}
+.footer small {
+  font-size: 10px;
+}
+.footer small > span {
+  display: inline-block;
+  transform: translateY(1px);
+}
+@media (min-width: 768px) {
+  .footer {
+    --marginTop: 60px;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .footer {
+    --marginTop: 80px;
+  }
+}
