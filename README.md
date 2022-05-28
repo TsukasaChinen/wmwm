@@ -1,3 +1,5 @@
+![メインイメージ](https://trylight.net/wmwm/ogp.png)
+
 # WMWM
 
 電子レンジのワット数ごとの温め時間を簡単に計算するサービス。
