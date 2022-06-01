@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+.prettierrc.js
+.eslintrc.js
+.eslintignore
 # production
 
 # misc
