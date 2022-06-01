@@ -11,7 +11,7 @@
 - Node v14.15.0 ~
 - React v17.0~
 
-## Install.
+## Install
 
 package.json に記載されているライブラリなどを下記コマンドでインストール。
 
