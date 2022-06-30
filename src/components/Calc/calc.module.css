@@ -7,7 +7,7 @@
   --selectFontSize: 48px;
   --selectLetterSpacing: 0.05em;
   --textFontSize: 18px;
-  --textLetterSpacing: 0.1em;
+  --textLetterSpacing: 0.06em;
   --maxMarginTop: 40px;
   width: var(--contentWidth);
   margin-top: clamp(20px, 6.25vw, var(--maxMarginTop));
